@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Intiseier Iqbal — Finance & Economics graduate from CUNY Queens College. Portfolio showcasing investment analysis, portfolio optimization, financial modeling, and economic research projects." />
+  <meta property="og:title" content="Intiseier Iqbal | Finance & Economics" />
+  <meta property="og:description" content="Finance & Economics graduate from CUNY Queens College with expertise in investment analysis, portfolio optimization, and financial modeling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/profile.jpg" />
+  <title>Intiseier Iqbal | Finance & Economics</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">II</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank" class="nav-resume"><i data-lucide="download"></i> Resume</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-photo-wrapper">
+        <img src="images/profile.jpg" alt="Intiseier Iqbal" class="hero-photo" id="heroPhoto" loading="eager" fetchpriority="high" onerror="this.style.display='none'; document.getElementById('heroInitials').style.display='flex';" />
+        <div class="hero-initials" id="heroInitials">II</div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Intiseier Iqbal</h1>
+        <p class="hero-title">Finance & Economics student building expertise in investment analysis, portfolio optimization, and financial modeling.</p>
+        <div class="hero-chips">
+          <span class="chip"><i data-lucide="map-pin"></i> Bronx, New York</span>
+          <span class="chip"><i data-lucide="graduation-cap"></i> CUNY Queens College</span>
+        </div>
+        <div class="hero-buttons">
+          <a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank" class="btn btn-primary"><i data-lucide="download"></i> Download Resume</a>
+          <a href="#projects" class="btn btn-secondary">View Projects</a>
+          <a href="https://www.linkedin.com/in/intiseier/" target="_blank" class="btn btn-outline"><i data-lucide="linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section fade-in" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-card">
+        <p>
+          I'm Intiseier Iqbal, an upper senior at Queens College majoring in Corporate Finance and Economics. My passion for this field started in Econ 101, where I discovered how finance is the backbone of society &mdash; how capital flows, transforms, and fuels the world around us.
+        </p>
+        <p>
+          Through coursework and hands-on projects, I've built experience in <strong>financial analysis</strong>, <strong>portfolio optimization</strong>, and <strong>economic modeling</strong>. From investment evaluations and LBO analysis to wage data regressions in R &mdash; I enjoy transforming raw data into actionable insights using <strong>Excel</strong>, <strong>Bloomberg Terminal</strong>, and <strong>R Studio</strong>.
+        </p>
+        <p>
+          As I approach graduation, I'm focused on launching my career in financial analysis, consulting, or economic research — roles where I can apply what I've built and keep growing alongside a strong team.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section section-alt fade-in" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-card">
+        <div class="edu-header">
+          <div>
+            <h3 class="edu-school">City University of New York (CUNY), Queens College</h3>
+            <p class="edu-degree">BBA in Finance &amp; BA in Economics</p>
+          </div>
+          <div class="edu-meta">
+            <span class="badge badge-gold">Expected May 2026</span>
+            <span class="badge badge-outline">GPA: 3.2</span>
+          </div>
+        </div>
+        <div class="coursework">
+          <p class="coursework-label">Relevant Coursework</p>
+          <div class="tags">
+            <span class="tag">Investment Analysis</span>
+            <span class="tag">Intermediate Finance</span>
+            <span class="tag">Corporate Finance</span>
+            <span class="tag">Econometrics</span>
+            <span class="tag">Money &amp; Banking</span>
+            <span class="tag">Statistics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section fade-in" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; Tools</h2>
+      <div class="skills-grid stagger-children">
+        <div class="skill-card">
+          <div class="skill-icon"><i data-lucide="trending-up"></i></div>
+          <h3>Financial &amp; Quantitative Analysis</h3>
+          <ul>
+            <li>Portfolio optimization &amp; efficient frontier modeling</li>
+            <li>Risk&ndash;return analysis &amp; CAPM</li>
+            <li>WACC &amp; capital structure analysis</li>
+            <li>Financial statement analysis &amp; valuation</li>
+            <li>LBO modeling &amp; IRR sensitivity analysis</li>
+            <li>Sharpe ratio, Sortino ratio, beta, alpha</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i data-lucide="monitor"></i></div>
+          <h3>Data &amp; Tools</h3>
+          <ul>
+            <li>Excel (advanced formulas, PivotTables, Solver, MMULT)</li>
+            <li>R / RStudio — statistical analysis</li>
+            <li>Bloomberg Terminal (BFF &amp; BMC)</li>
+            <li>Python w/ Anaconda — JupyterLab (in progress)</li>
+            <li>Market data platforms</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i data-lucide="languages"></i></div>
+          <h3>Languages &amp; Communication</h3>
+          <ul>
+            <li>English — Fluent</li>
+            <li>Bengali — Fluent</li>
+            <li>Business Writing &amp; Reporting</li>
+            <li>Presentations &amp; Public Speaking</li>
+            <li>Team Leadership &amp; Training</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACADEMIC PROJECTS ===== -->
+  <section class="section section-alt fade-in" id="projects">
+    <div class="container">
+      <h2 class="section-title">Academic Projects</h2>
+      <p style="color:var(--text-muted);margin-bottom:32px;font-size:0.9rem;">Click any card to see full details &amp; attachments.</p>
+      <div class="projects-grid stagger-children" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section fade-in" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Payroll &amp; Financial Analysis Intern</h3>
+                <p class="timeline-company">T-Rex Consulting</p>
+              </div>
+              <span class="date-badge">June 2025 &ndash; July 2025</span>
+            </div>
+            <ul>
+              <li>Audited payroll data using Deputy, Autofleet, and Samsara to resolve discrepancies</li>
+              <li>Built Excel reports with PivotTables, VLOOKUPs, and conditional formatting to support compensation analysis</li>
+              <li>Produced salary transition summaries and communicated findings to leadership</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Certified Trainer</h3>
+                <p class="timeline-company">Chipotle</p>
+              </div>
+              <span class="date-badge">Mar 2022 &ndash; Mar 2024</span>
+            </div>
+            <ul>
+              <li>Trained 20+ employees and supported high-volume operations, developing reliability and execution discipline</li>
+              <li>Recognized for consistency, attention to detail, and team leadership in a fast-paced environment</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXTRACURRICULAR ===== -->
+  <section class="section section-alt fade-in" id="extra">
+    <div class="container">
+      <h2 class="section-title">Extracurricular &amp; Development</h2>
+      <div class="extra-grid">
+
+        <div class="extra-card">
+          <div class="extra-icon"><i data-lucide="graduation-cap"></i></div>
+          <div class="extra-body">
+            <div class="extra-header">
+              <h3>Member, Queens College Finance Club</h3>
+              <span class="date-badge">June 2023 &ndash; Present</span>
+            </div>
+            <p>Participate in weekly discussions on equity markets, macroeconomic events, and portfolio strategy.</p>
+          </div>
+        </div>
+
+        <div class="extra-card">
+          <div class="extra-icon"><i data-lucide="award"></i></div>
+          <div class="extra-body">
+            <div class="extra-header">
+              <h3>Career Development Fellow, Project Basta</h3>
+              <span class="date-badge">Fall 2023 &ndash; Present</span>
+            </div>
+            <p>Selected for a 50+ hour professional development program focused on finance careers, networking, and technical readiness.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section fade-in" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">I'm actively pursuing full-time opportunities in finance starting Summer 2026. Feel free to reach out!</p>
+      <div class="contact-grid stagger-children">
+        <a href="mailto:intiseier@gmail.com" class="contact-card">
+          <span class="contact-icon"><i data-lucide="mail"></i></span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">intiseier@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/intiseier/" target="_blank" class="contact-card">
+          <span class="contact-icon"><i data-lucide="linkedin"></i></span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">View Profile</span>
+        </a>
+        <div class="contact-card contact-card-plain">
+          <span class="contact-icon"><i data-lucide="map-pin"></i></span>
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Bronx, New York</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank">Resume</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/intiseier/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:intiseier@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Intiseier Iqbal</p>
+    </div>
+  </footer>
+
+  <!-- ===== FILE VIEWER ===== -->
+  <div id="fileViewer" class="viewer-overlay">
+    <div class="viewer-box">
+      <div class="viewer-header">
+        <span class="viewer-filename"></span>
+        <div class="viewer-actions">
+          <a class="viewer-open" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link"></i> Open</a>
+          <a class="viewer-download" download><i data-lucide="download"></i> Download</a>
+          <button class="viewer-close" aria-label="Close"><i data-lucide="x"></i></button>
+        </div>
+      </div>
+      <div class="viewer-body"></div>
+    </div>
+  </div>
+
+  <!-- ===== MOBILE FILE VIEWER ===== -->
+  <div id="mobileViewer" class="mobile-viewer-overlay" role="dialog" aria-modal="true">
+    <div class="mobile-viewer-sheet">
+      <div class="mobile-viewer-header">
+        <div class="mobile-viewer-topline">
+          <span class="mobile-viewer-kicker">Project Attachment</span>
+          <button class="mobile-viewer-close" aria-label="Close attachment viewer">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="mobile-viewer-meta">
+          <span class="mobile-viewer-filename"></span>
+          <span class="mobile-viewer-type"></span>
+        </div>
+        <div class="mobile-viewer-actions">
+          <a class="mobile-viewer-open" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="external-link"></i> Open
+          </a>
+          <a class="mobile-viewer-download" download>
+            <i data-lucide="download"></i> Download
+          </a>
+        </div>
+      </div>
+      <div class="mobile-viewer-body"></div>
+    </div>
+  </div>
+
+  <!-- ===== PROJECT MODAL ===== -->
+  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close"><i data-lucide="x"></i></button>
+      <div class="modal-image"></div>
+      <div class="modal-content">
+        <div class="modal-meta"></div>
+        <h2 class="modal-title"></h2>
+        <ul class="modal-bullets"></ul>
+        <div class="modal-skills"></div>
+        <div class="modal-attachments"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@0.469.0"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
