@@ -67,6 +67,24 @@ backToTop.addEventListener('click', () => {
 });
 
 // ===========================
+// Hero photo fallback (shows initials if the photo fails to load)
+// ===========================
+const heroPhoto = document.getElementById('heroPhoto');
+const heroInitials = document.getElementById('heroInitials');
+
+function showHeroFallback() {
+  heroPhoto.style.display = 'none';
+  heroInitials.style.display = 'flex';
+}
+
+if (heroPhoto && heroInitials) {
+  heroPhoto.addEventListener('error', showHeroFallback);
+  if (heroPhoto.complete && heroPhoto.naturalWidth === 0) {
+    showHeroFallback();
+  }
+}
+
+// ===========================
 // Fade-in sections on scroll
 // ===========================
 const fadeElements = document.querySelectorAll('.fade-in');
@@ -415,9 +433,7 @@ let cleanupViewer = null;
 let cleanupMobileViewer = null;
 let mobileViewerRenderToken = 0;
 
-if (window.pdfjsLib) {
-  window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-}
+// PDF.js is loaded (self-hosted) and configured by pdf-init.mjs, which sets window.pdfjsLib.
 
 function isMobileViewer() {
   return window.matchMedia('(max-width: 768px)').matches;
@@ -819,7 +835,7 @@ async function renderMobilePdf(href) {
   </div>`;
 
   try {
-    const loadingTask = window.pdfjsLib.getDocument(href);
+    const loadingTask = window.pdfjsLib.getDocument({ url: href, isEvalSupported: false });
     const pdf = await loadingTask.promise;
     if (renderToken !== mobileViewerRenderToken) return;
     const stack = document.createElement('div');
@@ -853,6 +869,7 @@ async function renderMobilePdf(href) {
       stack.appendChild(container);
 
       await page.render({
+        canvas,
         canvasContext: context,
         viewport: scaledViewport,
         transform: [outputScale, 0, 0, outputScale, 0, 0],

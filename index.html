@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
   <meta name="description" content="Intiseier Iqbal — Finance & Economics graduate from CUNY Queens College. Portfolio showcasing investment analysis, portfolio optimization, financial modeling, and economic research projects." />
   <meta property="og:title" content="Intiseier Iqbal | Finance & Economics" />
   <meta property="og:description" content="Finance & Economics graduate from CUNY Queens College with expertise in investment analysis, portfolio optimization, and financial modeling." />
@@ -26,7 +27,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank" class="nav-resume"><i data-lucide="download"></i> Resume</a></li>
+        <li><a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume"><i data-lucide="download"></i> Resume</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -38,21 +39,21 @@
   <section class="hero" id="hero">
     <div class="hero-content">
       <div class="hero-photo-wrapper">
-        <img src="images/profile.jpg" alt="Intiseier Iqbal" class="hero-photo" id="heroPhoto" loading="eager" fetchpriority="high" onerror="this.style.display='none'; document.getElementById('heroInitials').style.display='flex';" />
+        <img src="images/profile.jpg" alt="Intiseier Iqbal" class="hero-photo" id="heroPhoto" loading="eager" fetchpriority="high" />
         <div class="hero-initials" id="heroInitials">II</div>
       </div>
       <div class="hero-text">
         <p class="hero-greeting">Hi, I'm</p>
         <h1 class="hero-name">Intiseier Iqbal</h1>
-        <p class="hero-title">Finance & Economics student building expertise in investment analysis, portfolio optimization, and financial modeling.</p>
+        <p class="hero-title">Finance & Economics graduate specializing in investment analysis, portfolio optimization, and financial modeling.</p>
         <div class="hero-chips">
           <span class="chip"><i data-lucide="map-pin"></i> Bronx, New York</span>
           <span class="chip"><i data-lucide="graduation-cap"></i> CUNY Queens College</span>
         </div>
         <div class="hero-buttons">
-          <a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank" class="btn btn-primary"><i data-lucide="download"></i> Download Resume</a>
+          <a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i data-lucide="download"></i> Download Resume</a>
           <a href="#projects" class="btn btn-secondary">View Projects</a>
-          <a href="https://www.linkedin.com/in/intiseier/" target="_blank" class="btn btn-outline"><i data-lucide="linkedin"></i> LinkedIn</a>
+          <a href="https://www.linkedin.com/in/intiseier/" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i data-lucide="linkedin"></i> LinkedIn</a>
         </div>
       </div>
     </div>
@@ -64,13 +65,13 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-card">
         <p>
-          I'm Intiseier Iqbal, an upper senior at Queens College majoring in Corporate Finance and Economics. My passion for this field started in Econ 101, where I discovered how finance is the backbone of society &mdash; how capital flows, transforms, and fuels the world around us.
+          I'm Intiseier Iqbal, a recent Queens College graduate with degrees in Corporate Finance and Economics. My passion for this field started in Econ 101, where I discovered how finance is the backbone of society &mdash; how capital flows, transforms, and fuels the world around us.
         </p>
         <p>
           Through coursework and hands-on projects, I've built experience in <strong>financial analysis</strong>, <strong>portfolio optimization</strong>, and <strong>economic modeling</strong>. From investment evaluations and LBO analysis to wage data regressions in R &mdash; I enjoy transforming raw data into actionable insights using <strong>Excel</strong>, <strong>Bloomberg Terminal</strong>, and <strong>R Studio</strong>.
         </p>
         <p>
-          As I approach graduation, I'm focused on launching my career in financial analysis, consulting, or economic research — roles where I can apply what I've built and keep growing alongside a strong team.
+          Now that I've graduated, I'm focused on launching my career in financial analysis, consulting, or economic research — roles where I can apply what I've built and keep growing alongside a strong team.
         </p>
       </div>
     </div>
@@ -87,8 +88,8 @@
             <p class="edu-degree">BBA in Finance &amp; BA in Economics</p>
           </div>
           <div class="edu-meta">
-            <span class="badge badge-gold">Expected May 2026</span>
-            <span class="badge badge-outline">GPA: 3.2</span>
+            <span class="badge badge-gold">Graduated May 2026</span>
+            <span class="badge badge-outline">GPA: 3.3</span>
           </div>
         </div>
         <div class="coursework">
@@ -214,7 +215,7 @@
           <div class="extra-body">
             <div class="extra-header">
               <h3>Member, Queens College Finance Club</h3>
-              <span class="date-badge">June 2023 &ndash; Present</span>
+              <span class="date-badge">June 2023 &ndash; May 2026</span>
             </div>
             <p>Participate in weekly discussions on equity markets, macroeconomic events, and portfolio strategy.</p>
           </div>
@@ -225,7 +226,7 @@
           <div class="extra-body">
             <div class="extra-header">
               <h3>Career Development Fellow, Project Basta</h3>
-              <span class="date-badge">Fall 2023 &ndash; Present</span>
+              <span class="date-badge">Fall 2023 &ndash; May 2026</span>
             </div>
             <p>Selected for a 50+ hour professional development program focused on finance careers, networking, and technical readiness.</p>
           </div>
@@ -239,14 +240,14 @@
   <section class="section fade-in" id="contact">
     <div class="container">
       <h2 class="section-title">Get In Touch</h2>
-      <p class="contact-intro">I'm actively pursuing full-time opportunities in finance starting Summer 2026. Feel free to reach out!</p>
+      <p class="contact-intro">I'm a recent graduate actively pursuing full-time opportunities in finance. Feel free to reach out!</p>
       <div class="contact-grid stagger-children">
         <a href="mailto:intiseier@gmail.com" class="contact-card">
           <span class="contact-icon"><i data-lucide="mail"></i></span>
           <span class="contact-label">Email</span>
           <span class="contact-value">intiseier@gmail.com</span>
         </a>
-        <a href="https://www.linkedin.com/in/intiseier/" target="_blank" class="contact-card">
+        <a href="https://www.linkedin.com/in/intiseier/" target="_blank" rel="noopener noreferrer" class="contact-card">
           <span class="contact-icon"><i data-lucide="linkedin"></i></span>
           <span class="contact-label">LinkedIn</span>
           <span class="contact-value">View Profile</span>
@@ -271,10 +272,10 @@
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
-        <a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank">Resume</a>
+        <a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
       <div class="footer-socials">
-        <a href="https://www.linkedin.com/in/intiseier/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/intiseier/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
         <a href="mailto:intiseier@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
       </div>
       <p class="footer-copy">&copy; 2026 Intiseier Iqbal</p>
@@ -338,8 +339,8 @@
     </div>
   </div>
 
-  <script src="https://unpkg.com/lucide@0.469.0"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="vendor/lucide.min.js"></script>
   <script src="script.js"></script>
+  <script type="module" src="pdf-init.mjs"></script>
 </body>
 </html>
