@@ -27,7 +27,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume"><i data-lucide="download"></i> Resume</a></li>
+        <li><a href="docs/resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume js-view-resume"><i data-lucide="file-text"></i> View Resume</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -51,10 +51,11 @@
           <span class="chip"><i data-lucide="graduation-cap"></i> CUNY Queens College</span>
         </div>
         <div class="hero-buttons">
-          <a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i data-lucide="download"></i> Download Resume</a>
+          <a href="docs/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary js-view-resume"><i data-lucide="file-text"></i> View Resume</a>
           <a href="#projects" class="btn btn-secondary">View Projects</a>
           <a href="https://www.linkedin.com/in/intiseier/" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i data-lucide="linkedin"></i> LinkedIn</a>
         </div>
+        <p class="resume-updated" id="resumeUpdated"></p>
       </div>
     </div>
   </section>
@@ -385,7 +386,7 @@
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
-        <a href="docs/Intiseier Iqbal Resume 2026.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="docs/resume.pdf" target="_blank" rel="noopener noreferrer" class="js-view-resume">View Resume</a>
       </div>
       <div class="footer-socials">
         <a href="https://www.linkedin.com/in/intiseier/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
@@ -453,6 +454,7 @@
   </div>
 
   <script src="vendor/lucide.min.js"></script>
+  <script src="data/site.js"></script>
   <script src="data/projects.js"></script>
   <script src="script.js"></script>
   <script type="module" src="pdf-init.mjs"></script>

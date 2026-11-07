@@ -263,6 +263,7 @@ const viewerOpen     = viewerOverlay.querySelector('.viewer-open');
 const viewerDownload = viewerOverlay.querySelector('.viewer-download');
 const viewerBody     = viewerOverlay.querySelector('.viewer-body');
 const mobileViewerOverlay = document.getElementById('mobileViewer');
+const mobileViewerKicker = mobileViewerOverlay.querySelector('.mobile-viewer-kicker');
 const mobileViewerFilename = mobileViewerOverlay.querySelector('.mobile-viewer-filename');
 const mobileViewerType = mobileViewerOverlay.querySelector('.mobile-viewer-type');
 const mobileViewerOpen = mobileViewerOverlay.querySelector('.mobile-viewer-open');
@@ -397,9 +398,10 @@ function setupImageViewer() {
   };
 }
 
-function openViewer(href, label) {
+// options: { downloadName, kicker } (both optional; used by the resume buttons)
+function openViewer(href, label, options = {}) {
   if (isMobileViewer()) {
-    openMobileViewer(href, label);
+    openMobileViewer(href, label, options);
     return;
   }
 
@@ -412,7 +414,7 @@ function openViewer(href, label) {
   viewerFilename.textContent = label;
   viewerOpen.href = href;
   viewerDownload.href = href;
-  viewerDownload.download = href.split('/').pop();
+  viewerDownload.download = options.downloadName || href.split('/').pop();
 
   if (['png', 'jpg', 'jpeg', 'gif', 'webp'].includes(ext)) {
     viewerBody.innerHTML = `
@@ -731,7 +733,7 @@ async function renderMobilePdf(href) {
   }
 }
 
-function openMobileViewer(href, label) {
+function openMobileViewer(href, label, options = {}) {
   if (cleanupMobileViewer) {
     cleanupMobileViewer();
     cleanupMobileViewer = null;
@@ -739,11 +741,12 @@ function openMobileViewer(href, label) {
 
   mobileViewerBody.scrollTop = 0;
   const ext = getFileExtension(href);
+  mobileViewerKicker.textContent = options.kicker || 'Project Attachment';
   mobileViewerFilename.textContent = label;
   mobileViewerType.textContent = getViewerTypeLabel(ext);
   mobileViewerOpen.href = href;
   mobileViewerDownload.href = href;
-  mobileViewerDownload.download = href.split('/').pop();
+  mobileViewerDownload.download = options.downloadName || href.split('/').pop();
 
   if (['png', 'jpg', 'jpeg', 'gif', 'webp'].includes(ext)) {
     mobileViewerBody.innerHTML = `
@@ -805,10 +808,29 @@ mobileViewerOverlay.querySelector('.mobile-viewer-close').addEventListener('clic
 mobileViewerOverlay.addEventListener('click', e => { if (e.target === mobileViewerOverlay) closeMobileViewer(); });
 
 // ===========================
+// View Resume buttons (settings in data/site.js)
+// Links still point at the PDF, so they work even if this script fails to load.
+// ===========================
+function setupResumeButtons() {
+  if (typeof SITE === 'undefined' || !SITE.resume) return;
+  const { path, updated, downloadName } = SITE.resume;
+  document.querySelectorAll('.js-view-resume').forEach(link => {
+    link.href = path;
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      openViewer(path, 'Resume: Intiseier Iqbal', { downloadName, kicker: 'Resume' });
+    });
+  });
+  const updatedEl = document.getElementById('resumeUpdated');
+  if (updatedEl && updated) updatedEl.textContent = `Resume updated ${updated}`;
+}
+
+// ===========================
 // Init
 // ===========================
 renderFilters();
 renderCards();
+setupResumeButtons();
 
 // Initialize Lucide icons (static + dynamically rendered)
 if (typeof lucide !== 'undefined') {
