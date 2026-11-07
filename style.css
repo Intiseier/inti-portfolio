@@ -601,6 +601,26 @@ a.cert-badge:hover {
   color: var(--text-muted);
 }
 
+.cert-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.cert-view i { width: 12px; height: 12px; }
+
+a.cert-badge:hover .cert-view { opacity: 1; text-decoration: underline; }
+
+a.cert-badge:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .timeline-content ul li strong,
 .extra-body p strong {
   color: var(--text);
