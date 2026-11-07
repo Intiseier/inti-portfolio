@@ -96,6 +96,7 @@ const projects = [
     featured: false,
     date: 'Spring 2026',
     summary: 'Logistic regression and decision tree models predicting loan defaults on 12,290 LendingClub records, tuned for an 80/20 class imbalance.',
+    image: 'images/projects/Credit Default - Logistic Regression ROC Curve.png',
     imageBg: 'linear-gradient(135deg,#1a2a4a,#3a1a5c)',
     emoji: '🏦',
     stat: 'A+', statLabel: 'Logistic Regression · Decision Trees',
@@ -107,7 +108,11 @@ const projects = [
       '<strong>Earned an A+</strong>, with findings tied directly to credit underwriting and portfolio risk management',
     ],
     links: [],
-    attachments: [],
+    attachments: [
+      { label: 'Logistic Regression ROC Curve', icon: '📈', href: 'images/projects/Credit Default - Logistic Regression ROC Curve.png' },
+      { label: 'Decision Tree ROC Curve', icon: '📈', href: 'images/projects/Credit Default - Decision Tree ROC Curve.png' },
+      { label: 'Decision Tree', icon: '🌳', href: 'images/projects/Credit Default - Decision Tree.png' },
+    ],
   },
   {
     title: 'Black-Scholes Option Pricing via Neural Network',
@@ -126,7 +131,9 @@ const projects = [
       'Achieved a <strong>test MAE of 0.13</strong> against the analytical Black-Scholes formula on out-of-sample data',
     ],
     links: [],
-    attachments: [],
+    attachments: [
+      { label: 'Training vs. Validation Loss', icon: '📉', href: 'images/projects/Black-Scholes NN - Training vs Validation Loss.png' },
+    ],
   },
   {
     title: 'Country Risk Segmentation Using K-Means Clustering',
@@ -135,6 +142,7 @@ const projects = [
     featured: false,
     date: 'Spring 2026',
     summary: 'K-means clustering of 121 countries by Peace Index, Legal Environment, and GDP Growth into distinct risk profiles.',
+    image: 'images/projects/Country Risk - Labeled Clusters (Peace vs Legal).png',
     imageBg: 'linear-gradient(135deg,#1a4a2a,#1a2a4a)',
     emoji: '🌍',
     stat: '121', statLabel: 'Countries · 3 Risk Profiles',
@@ -145,7 +153,11 @@ const projects = [
       'Arrived at <strong>3 distinct country risk profiles</strong> for investment and operational decision-making across emerging and developed markets',
     ],
     links: [],
-    attachments: [],
+    attachments: [
+      { label: 'Labeled Clusters (Peace vs. Legal)', icon: '🌍', href: 'images/projects/Country Risk - Labeled Clusters (Peace vs Legal).png' },
+      { label: 'Elbow Method', icon: '📈', href: 'images/projects/Country Risk - Elbow Method.png' },
+      { label: '3D Clusters', icon: '🧊', href: 'images/projects/Country Risk - 3D Clusters.png' },
+    ],
   },
   {
     title: 'Equity Portfolio Construction & Risk Analysis',
