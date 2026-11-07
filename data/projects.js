@@ -39,7 +39,10 @@ const projects = [
       'Arrived at a <strong>recommended valuation of $64B to $76B with a $70B midpoint</strong>, packaged into a client-ready deck and banker summary',
     ],
     links: [],
-    attachments: [],
+    attachments: [
+      { label: 'Company Profile & DCF Deck (.pdf)', icon: '📊', href: 'docs/Nintendo Company Profile and DCF - Intiseier Iqbal.pdf' },
+      { label: 'DCF Model (.pdf)', icon: '📈', href: 'docs/Nintendo DCF Model - Intiseier Iqbal.pdf' },
+    ],
   },
   {
     title: 'Webflix, Inc. Financial Analysis & SWOT',
@@ -61,7 +64,9 @@ const projects = [
       'Found <strong>free cash flow as the central diligence issue</strong> (operating cash flow fell to $0.4B and FCF to $0.2B in FY2021 on rising content spend) and recommended an M&amp;A path to add first-party gaming IP and deepen Asia-Pacific reach',
     ],
     links: [],
-    attachments: [],
+    attachments: [
+      { label: 'Financial Summary (.pdf)', icon: '📄', href: 'docs/Webflix Financial Summary - Intiseier Iqbal.pdf' },
+    ],
   },
   {
     title: 'MarketMeh: Desktop Markets Dashboard',
