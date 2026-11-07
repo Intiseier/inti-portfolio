@@ -61,7 +61,7 @@ const projects = [
       'Tracked revenue growth from $20.2B to $29.7B (21.4% two-year CAGR), gross margin expansion from 38.3% to 41.6%, and EBITDA margin expansion from 13.4% to 21.6%',
       'Analyzed the credit profile, showing debt/EBITDA compressing from 5.5x to 2.4x and debt/book capitalization from 66.1% to 49.3% on earnings growth, with total debt flat at $15.4B',
       'Completed a SWOT analysis weighing 222M+ paid memberships across 190+ countries against content-spend intensity, a maturing subscriber base, and new entrants (Apple, Amazon, Hulu)',
-      'Found <strong>free cash flow as the central diligence issue</strong> (operating cash flow fell to $0.4B and FCF to $0.2B in FY2021 on rising content spend) and recommended an M&amp;A path to add first-party gaming IP and deepen Asia-Pacific reach',
+      'Found <strong>free cash flow as the central diligence issue</strong> (operating cash flow fell to $0.4B and FCF turned negative, a $0.16B outflow, in FY2021 on rising content spend) and recommended an M&amp;A path to add first-party gaming IP and deepen Asia-Pacific reach',
     ],
     links: [],
     attachments: [
