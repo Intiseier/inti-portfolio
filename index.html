@@ -22,10 +22,10 @@
       <a href="#hero" class="nav-logo">II</a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="docs/resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume js-view-resume"><i data-lucide="file-text"></i> View Resume</a></li>
       </ul>
@@ -37,13 +37,9 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
-    <div class="hero-content">
-      <div class="hero-photo-wrapper">
-        <img src="images/profile.jpg" alt="Intiseier Iqbal" class="hero-photo" id="heroPhoto" loading="eager" fetchpriority="high" />
-        <div class="hero-initials" id="heroInitials">II</div>
-      </div>
+    <div class="hero-inner">
       <div class="hero-text">
-        <p class="hero-greeting">Hi, I'm</p>
+        <p class="hero-kicker"><span class="hero-kicker-dot"></span> Finance &middot; Data &middot; Operations</p>
         <h1 class="hero-name">Intiseier Iqbal</h1>
         <p class="hero-title">Finance graduate with real payroll and operations experience, who analyzes data and builds his own tools with AI.</p>
         <div class="hero-chips">
@@ -57,14 +53,29 @@
         </div>
         <p class="resume-updated" id="resumeUpdated"></p>
       </div>
+      <div class="hero-visual">
+        <div class="hero-photo-wrapper">
+          <img src="images/profile.jpg" alt="Intiseier Iqbal" class="hero-photo" id="heroPhoto" loading="eager" fetchpriority="high" />
+          <div class="hero-initials" id="heroInitials">II</div>
+        </div>
+        <div class="hero-badge"><i data-lucide="award"></i><span><strong>BBA in Finance</strong>Queens College &middot; May 2026</span></div>
+      </div>
+    </div>
+    <div class="hero-stats" aria-label="Highlights">
+      <div class="stat"><span class="stat-value">3 to 7</span><span class="stat-label">payroll errors caught daily at T-Rex Consulting</span></div>
+      <div class="stat"><span class="stat-value">2,000+</span><span class="stat-label">overtime slips filed in 4 days at the NYPD</span></div>
+      <div class="stat"><span class="stat-value">$70B</span><span class="stat-label">Nintendo valuation midpoint from my DCF</span></div>
+      <div class="stat"><span class="stat-value">17</span><span class="stat-label">projects and 7 verified certifications</span></div>
     </div>
   </section>
 
   <!-- ===== ABOUT ===== -->
   <section class="section fade-in" id="about">
     <div class="container">
+      <p class="section-kicker">01 &middot; About</p>
       <h2 class="section-title">About Me</h2>
-      <div class="about-card">
+      <div class="about-grid">
+        <div class="about-card">
         <p>
           I'm Intiseier Iqbal, a first-generation college graduate from the Bronx with a BBA in Finance (Corporate Finance) from Queens College. Finance clicked for me in Econ 101, when I saw it as the backbone of society: how capital flows, transforms, and fuels the world around us.
         </p>
@@ -72,13 +83,163 @@
           Since then I've built <strong>DCF and LBO models</strong>, used <strong>Python</strong> to predict loan defaults, and built my own markets app with <strong>AI</strong>, checking every output against the source before I use it. On the job, I caught <strong>3 to 7 payroll errors a day</strong> at T-Rex Consulting and reorganized records for the NYPD's 41st Precinct. I'm looking for a full-time role in finance, data, or operations where accuracy matters and there's room to keep growing.
         </p>
       </div>
+        <aside class="glance-card" aria-label="At a glance">
+          <p class="glance-title">At a glance</p>
+          <dl>
+            <div><dt><i data-lucide="graduation-cap"></i> Degree</dt><dd>BBA in Finance (Corporate Finance), Queens College, May 2026</dd></div>
+            <div><dt><i data-lucide="map-pin"></i> Based in</dt><dd>Bronx, New York</dd></div>
+            <div><dt><i data-lucide="briefcase"></i> Open to</dt><dd>Full-time roles in finance, data, or operations</dd></div>
+            <div><dt><i data-lucide="wrench"></i> Core tools</dt><dd>Excel, Bloomberg, Python, Tableau, AI tools</dd></div>
+            <div><dt><i data-lucide="languages"></i> Languages</dt><dd>English, Bengali</dd></div>
+          </dl>
+        </aside>
+      </div>
     </div>
   </section>
 
-  <!-- ===== EDUCATION ===== -->
-  <section class="section section-alt fade-in" id="education">
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section section-alt fade-in" id="experience">
     <div class="container">
-      <h2 class="section-title">Education</h2>
+      <p class="section-kicker">02 &middot; Experience</p>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Summer Office Assistant Intern</h3>
+                <p class="timeline-company">NYPD, 41st Precinct &middot; Bronx, NY</p>
+              </div>
+              <span class="date-badge">Jun 2026 to Aug 2026</span>
+            </div>
+            <ul>
+              <li>Managed daily front-office operations: phones, appointment scheduling, email correspondence, visitor sign-in, and document preparation</li>
+              <li>Sorted, alphabetized, and filed 2,000+ overtime slips submitted across multiple tours to support precinct payroll processing, and standardized the filing order the team adopted</li>
+              <li>Cleared and reorganized record storage, separating retained records from material cleared for disposal and moving active records into a labeled retrieval system</li>
+              <li>Served as the supervisor's primary point of contact for a 13-person cohort, relaying assignments and owning waivers and headcount for a citywide job fair</li>
+              <li class="result-line">Resulted in <strong>2,000+ overtime slips filed in 4 days vs. a full week expected</strong>, <strong>20 to 30 shelves of records reorganized in one week</strong>, and fewer misfiled and duplicate records</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Payroll &amp; Financial Analysis Intern</h3>
+                <p class="timeline-company">T-Rex Consulting &middot; Queens, NY</p>
+              </div>
+              <span class="date-badge">Jun 2025 to Aug 2025</span>
+            </div>
+            <ul>
+              <li>Audited daily timekeeping for ~50 employees across Deputy, Autofleet, and Samsara, verifying each discrepancy against camera footage and system logs before payroll ran</li>
+              <li>Replaced a fully manual review with formula-based Excel checks and AI tools that flagged timekeeping discrepancies faster, verifying every flagged item against source records before correcting it</li>
+              <li>Built recurring Excel reports (PivotTables, VLOOKUP, conditional formatting) for compensation analyses and salary-transition summaries presented to leadership</li>
+              <li>Resolved 2 to 3 employee timekeeping disputes per week using system records and camera evidence</li>
+              <li class="result-line">Resulted in <strong>3 to 7 payroll errors caught daily before paychecks went out</strong>, fewer employee pay complaints, and a salary analysis leadership used to <strong>move an hourly employee to a $1,300/week salary</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Certified Trainer</h3>
+                <p class="timeline-company">Chipotle Mexican Grill &middot; New York, NY</p>
+              </div>
+              <span class="date-badge">Mar 2022 to Mar 2024</span>
+            </div>
+            <ul>
+              <li>Packed 1,000+ customer orders weekly at a pace of 50+ entrées per hour in a high-volume store</li>
+              <li>Organized inventory during peak hours and trained 20+ new team members on operating procedures and inventory standards</li>
+              <li class="result-line">Part of a team that <strong>grew daily store sales from $10K to $15K</strong> over two years</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS (cards are built from data/projects.js) ===== -->
+  <section class="section fade-in" id="projects">
+    <div class="container">
+      <p class="section-kicker">03 &middot; Work</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="projects-intro">Click any card to see full details &amp; attachments.</p>
+      <div class="project-filters" id="projectFilters" role="group" aria-label="Filter projects by category"></div>
+      <div class="projects-grid stagger-children" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt fade-in" id="skills">
+    <div class="container">
+      <p class="section-kicker">04 &middot; Skills</p>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+      <div class="skills-grid stagger-children">
+        <div class="skill-card skill-card--chips">
+          <div class="skill-icon"><i data-lucide="trending-up"></i></div>
+          <h3>Financial &amp; Quantitative Analysis</h3>
+          <ul>
+            <li>DCF valuation &amp; comparable company analysis</li>
+            <li>Sensitivity analysis (WACC vs. exit multiple, IRR)</li>
+            <li>Financial statement &amp; 10-K analysis</li>
+            <li>LBO modeling, M&amp;A screening &amp; strategic alternatives</li>
+            <li>WACC &amp; capital structure analysis</li>
+            <li>Portfolio optimization &amp; efficient frontier modeling</li>
+            <li>Risk-return analysis, CAPM, Sharpe &amp; Sortino ratios, beta, alpha</li>
+          </ul>
+        </div>
+        <div class="skill-card skill-card--chips">
+          <div class="skill-icon"><i data-lucide="monitor"></i></div>
+          <h3>Data &amp; Tools</h3>
+          <ul>
+            <li>Excel (advanced formulas, PivotTables, Solver, covariance matrices, VBA)</li>
+            <li>Bloomberg Terminal &amp; Bloomberg Query Language (BQL)</li>
+            <li>Python (pandas, scikit-learn, TensorFlow)</li>
+            <li>R / RStudio, Tableau, C++</li>
+            <li>AI-assisted application development</li>
+            <li>Microsoft Office (Word, PowerPoint, Outlook)</li>
+            <li>Photoshop &amp; Premiere Pro</li>
+            <li>Market data platforms</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i data-lucide="sparkles"></i></div>
+          <h3>AI Fluency</h3>
+          <ul>
+            <li>Apply Anthropic's 4D framework: Delegation, Description, Discernment, Diligence</li>
+            <li>Decide which tasks to hand to AI and which to keep</li>
+            <li>Check every output against source data before using it, and stay accountable for the final work</li>
+            <li>Claude Projects, Artifacts, connectors &amp; custom skills for research, drafting &amp; analysis</li>
+          </ul>
+        </div>
+        <div class="skill-card skill-card--chips">
+          <div class="skill-icon"><i data-lucide="languages"></i></div>
+          <h3>Languages &amp; Communication</h3>
+          <ul>
+            <li>English: Fluent</li>
+            <li>Bengali: Fluent (spoken)</li>
+            <li>Business Writing &amp; Reporting</li>
+            <li>Presentations &amp; Public Speaking</li>
+            <li>Team Leadership &amp; Training</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION & CREDENTIALS ===== -->
+  <section class="section fade-in" id="education">
+    <div class="container">
+      <p class="section-kicker">05 &middot; Education</p>
+      <h2 class="section-title">Education &amp; Credentials</h2>
       <div class="edu-card">
         <div class="edu-header">
           <div>
@@ -104,71 +265,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ===== SKILLS ===== -->
-  <section class="section fade-in" id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills &amp; Tools</h2>
-      <div class="skills-grid stagger-children">
-        <div class="skill-card">
-          <div class="skill-icon"><i data-lucide="trending-up"></i></div>
-          <h3>Financial &amp; Quantitative Analysis</h3>
-          <ul>
-            <li>DCF valuation &amp; comparable company analysis</li>
-            <li>Sensitivity analysis (WACC vs. exit multiple, IRR)</li>
-            <li>Financial statement &amp; 10-K analysis</li>
-            <li>LBO modeling, M&amp;A screening &amp; strategic alternatives</li>
-            <li>WACC &amp; capital structure analysis</li>
-            <li>Portfolio optimization &amp; efficient frontier modeling</li>
-            <li>Risk-return analysis, CAPM, Sharpe &amp; Sortino ratios, beta, alpha</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i data-lucide="monitor"></i></div>
-          <h3>Data &amp; Tools</h3>
-          <ul>
-            <li>Excel (advanced formulas, PivotTables, Solver, covariance matrices, VBA)</li>
-            <li>Bloomberg Terminal &amp; Bloomberg Query Language (BQL)</li>
-            <li>Python (pandas, scikit-learn, TensorFlow)</li>
-            <li>R / RStudio, Tableau, C++</li>
-            <li>AI-assisted application development</li>
-            <li>Microsoft Office (Word, PowerPoint, Outlook)</li>
-            <li>Photoshop &amp; Premiere Pro</li>
-            <li>Market data platforms</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i data-lucide="sparkles"></i></div>
-          <h3>AI Fluency</h3>
-          <ul>
-            <li>Apply Anthropic's 4D framework: Delegation, Description, Discernment, Diligence</li>
-            <li>Decide which tasks to hand to AI and which to keep</li>
-            <li>Check every output against source data before using it, and stay accountable for the final work</li>
-            <li>Claude Projects, Artifacts, connectors &amp; custom skills for research, drafting &amp; analysis</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i data-lucide="languages"></i></div>
-          <h3>Languages &amp; Communication</h3>
-          <ul>
-            <li>English: Fluent</li>
-            <li>Bengali: Fluent (spoken)</li>
-            <li>Business Writing &amp; Reporting</li>
-            <li>Presentations &amp; Public Speaking</li>
-            <li>Team Leadership &amp; Training</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CERTIFICATIONS ===== -->
-  <!-- Each badge links to its verified certificate (links from LinkedIn > Licenses & certifications). -->
-  <section class="section fade-in" id="certifications">
-    <div class="container">
-      <h2 class="section-title">Certifications</h2>
+      <!-- Each badge links to its verified certificate (links from LinkedIn > Licenses & certifications). -->
+      <h3 class="subsection-title" id="certifications">Certifications</h3>
       <div class="cert-grid">
         <a class="cert-badge" href="https://academy.claude.com/verify/039849e9c6cf895dd7a6dbfa4927139f" target="_blank" rel="noopener noreferrer" aria-label="View certificate: Claude 101, Anthropic Academy (opens in a new tab)">
           <span class="cert-icon"><i data-lucide="sparkles"></i></span>
@@ -202,87 +300,10 @@
     </div>
   </section>
 
-  <!-- ===== PROJECTS (cards are built from data/projects.js) ===== -->
-  <section class="section section-alt fade-in" id="projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <p class="projects-intro">Click any card to see full details &amp; attachments.</p>
-      <div class="project-filters" id="projectFilters" role="group" aria-label="Filter projects by category"></div>
-      <div class="projects-grid stagger-children" id="projectsGrid"></div>
-    </div>
-  </section>
-
-  <!-- ===== EXPERIENCE ===== -->
-  <section class="section fade-in" id="experience">
-    <div class="container">
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Summer Office Assistant Intern</h3>
-                <p class="timeline-company">NYPD, 41st Precinct &middot; Bronx, NY</p>
-              </div>
-              <span class="date-badge">Jun 2026 to Aug 2026</span>
-            </div>
-            <ul>
-              <li>Managed daily front-office operations: phones, appointment scheduling, email correspondence, visitor sign-in, and document preparation</li>
-              <li>Sorted, alphabetized, and filed 2,000+ overtime slips submitted across multiple tours to support precinct payroll processing, and standardized the filing order the team adopted</li>
-              <li>Cleared and reorganized record storage, separating retained records from material cleared for disposal and moving active records into a labeled retrieval system</li>
-              <li>Served as the supervisor's primary point of contact for a 13-person cohort, relaying assignments and owning waivers and headcount for a citywide job fair</li>
-              <li>Resulted in <strong>2,000+ overtime slips filed in 4 days vs. a full week expected</strong>, <strong>20 to 30 shelves of records reorganized in one week</strong>, and fewer misfiled and duplicate records</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Payroll &amp; Financial Analysis Intern</h3>
-                <p class="timeline-company">T-Rex Consulting &middot; Queens, NY</p>
-              </div>
-              <span class="date-badge">Jun 2025 to Aug 2025</span>
-            </div>
-            <ul>
-              <li>Audited daily timekeeping for ~50 employees across Deputy, Autofleet, and Samsara, verifying each discrepancy against camera footage and system logs before payroll ran</li>
-              <li>Replaced a fully manual review with formula-based Excel checks and AI tools that flagged timekeeping discrepancies faster, verifying every flagged item against source records before correcting it</li>
-              <li>Built recurring Excel reports (PivotTables, VLOOKUP, conditional formatting) for compensation analyses and salary-transition summaries presented to leadership</li>
-              <li>Resolved 2 to 3 employee timekeeping disputes per week using system records and camera evidence</li>
-              <li>Resulted in <strong>3 to 7 payroll errors caught daily before paychecks went out</strong>, fewer employee pay complaints, and a salary analysis leadership used to <strong>move an hourly employee to a $1,300/week salary</strong></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Certified Trainer</h3>
-                <p class="timeline-company">Chipotle Mexican Grill &middot; New York, NY</p>
-              </div>
-              <span class="date-badge">Mar 2022 to Mar 2024</span>
-            </div>
-            <ul>
-              <li>Packed 1,000+ customer orders weekly at a pace of 50+ entrées per hour in a high-volume store</li>
-              <li>Organized inventory during peak hours and trained 20+ new team members on operating procedures and inventory standards</li>
-              <li>Part of a team that <strong>grew daily store sales from $10K to $15K</strong> over two years</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- ===== EXTRACURRICULAR ===== -->
   <section class="section section-alt fade-in" id="extra">
     <div class="container">
+      <p class="section-kicker">06 &middot; Beyond class</p>
       <h2 class="section-title">Extracurricular &amp; Development</h2>
       <div class="extra-grid">
 
@@ -348,6 +369,7 @@
   <!-- ===== CONTACT ===== -->
   <section class="section fade-in" id="contact">
     <div class="container">
+      <p class="section-kicker">07 &middot; Contact</p>
       <h2 class="section-title">Get In Touch</h2>
       <p class="contact-intro">I'm a recent finance graduate looking for full-time roles in finance, data, or operations. Feel free to reach out!</p>
       <div class="contact-grid stagger-children">
@@ -378,8 +400,8 @@
     <div class="footer-inner">
       <div class="footer-links">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a href="docs/resume.pdf" target="_blank" rel="noopener noreferrer" class="js-view-resume">View Resume</a>
       </div>

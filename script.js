@@ -26,7 +26,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 const navbar = document.getElementById('navbar');
 const backToTop = document.getElementById('backToTop');
 
-const sectionIds = ['about', 'education', 'skills', 'projects', 'experience', 'contact'];
+const sectionIds = ['about', 'experience', 'projects', 'skills', 'education', 'contact'];
 const navAnchors = sectionIds.map(id => navLinks.querySelector(`a[href="#${id}"]`));
 
 function updateActiveNav() {
@@ -39,6 +39,11 @@ function updateActiveNav() {
       activeIndex = i;
       break;
     }
+  }
+
+  // At the very bottom the last (short) section can't reach the top, so highlight it anyway
+  if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+    activeIndex = sectionIds.length - 1;
   }
 
   navAnchors.forEach((a, i) => {
